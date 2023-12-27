@@ -1,0 +1,46 @@
+/* landing-page.component.css */
+
+.landing-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .upload-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .dialog {
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-select {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .generate-btn,
+  .close-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+  }
+  

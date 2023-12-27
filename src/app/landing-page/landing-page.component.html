@@ -1,0 +1,33 @@
+<!-- landing-page.component.html -->
+
+<div class="landing-container">
+    <h1>Welcome to the Food Ordering App</h1>
+    <!-- Button to trigger file input -->
+    <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls" style="display: none" #fileInput />
+    <button (click)="fileInput.click()" class="upload-btn">Upload Excel</button>
+  </div>
+  
+  <!-- Display D3 Charts in a dialog -->
+  <ng-container *ngIf="showDialog">
+    <div class="dialog">
+      <h2>Select D3 Chart Type</h2>
+      <select [(ngModel)]="selectedChartType" class="chart-select">
+        <option value="bar">Bar Chart</option>
+        <!-- Add other chart types as needed -->
+      </select>
+      <button (click)="generateChart()" class="generate-btn">Generate Chart</button>
+      <button (click)="closeDialog()" class="close-btn">Close</button>
+      
+    </div>
+  </ng-container>
+  
+<!-- landing-page.component.html -->
+
+<!-- Display the chart -->
+
+<div *ngIf="chartData" class="chart-container" id="chart-container">
+    <h2>Chart</h2>
+  </div>
+  
+  
+  
